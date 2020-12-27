@@ -1,4 +1,3 @@
-![Unit Tests & Lint](https://github.com/nasty8k/Ruby/lab1/workflows/Unit%20Tests%20&%20Lint/badge.svg)
 
 # Ruby Study
 ## Install
@@ -11,11 +10,11 @@ bundle install
 ## Run test
 
 ```bash
-cd "NameOfLab"/ && rspec
+rspec
 ```
 
 ## Run rubocop
 
 ```bash
 rubocop
-rubocop -a # Auto-correct
+rubocop -a -D # Auto-correct, Class name of rubocop
