@@ -66,7 +66,7 @@ class ParserConfig
   end
 
   def config_not_found
-    url = "https://raw.githubusercontent.com/shu512/ruby_stuby/master/2lab/lib/#{CONFIG_FILENAME}"
+    url = "https://github.com/Nasty8k/Ruby/tree/main/lab3/#{CONFIG_FILENAME}"
     IOAdapter.instance.output "#{CONFIG_FILENAME} not found. Config download..."
     Kernel.open(url) do |config|
       File.open(CONFIG_FILENAME, 'w') { |f| f.write(config.read) }

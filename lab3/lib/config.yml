@@ -10,7 +10,7 @@ initial:
     value: 100
 actions:
   -
-    name: work
+    name: work💼💵
     description: go to work
     effects:
       -
@@ -35,7 +35,7 @@ actions:
         operator: '<'
         value: 10
   -
-    name: nature
+    name: nature🌲🌱🌳🌴
     description: contemplate nature
     effects:
       -
@@ -48,7 +48,7 @@ actions:
         field: tiredness
         value: +10
   -
-    name: wine and series
+    name: wine🍷 and series📽
     description: drink wine and watch the series
     effects:
       -
@@ -67,7 +67,7 @@ actions:
         field: tiredness
         value: +10
   -
-    name: drink
+    name: drink🍺
     description: go to pub
     effects:
       -
@@ -86,7 +86,7 @@ actions:
         field: tiredness
         value: +40
   -
-    name: drink up
+    name: drink with marginals🍻👬
     description: drink with marginalized personalities
     effects:
       -
@@ -105,7 +105,7 @@ actions:
         field: tiredness
         value: +80
   -
-    name: sing
+    name: sing🎤
     description: sing on the subway
     effects:
       -
@@ -121,7 +121,7 @@ actions:
         field: tiredness
         value: +20
   -
-    name: sleep
+    name: sleep😴🛌
     description: sleep
     effects:
       -

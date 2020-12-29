@@ -21,7 +21,7 @@ class Model
       additional_actions(value)
     end
     print_parameters
-    IOAdapter.instance.output 'Валера умер :(' # alias output ?
+    IOAdapter.instance.output 'Валера умер 😵' # alias output ?
   end
 
   def additional_actions(value)
