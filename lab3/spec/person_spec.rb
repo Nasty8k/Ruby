@@ -38,6 +38,5 @@ describe Person do
 
     it { expect(subject).to eq(100) }
     it { expect(person.health).to eq(70) }
-
   end
 end

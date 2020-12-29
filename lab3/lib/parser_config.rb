@@ -63,5 +63,4 @@ class ParserConfig
                           effects: add_cond['effects'].map { |eff| create_effect(eff) }
     end
   end
-
 end
