@@ -1,0 +1,153 @@
+initial:
+  -
+    field: mana
+    value: 0
+  -
+    field: money
+    value: 9000
+  -
+    field: happiness
+    value: 100
+actions:
+  -
+    name: work
+    description: go to work
+    effects:
+      -
+        field: happiness
+        value: -5
+      -
+        field: mana
+        value: -30
+      -
+        field: money
+        value: +100
+      -
+        field: tiredness
+        value: +70
+    condition:
+      -
+        field: mana
+        operator: '<'
+        value: 50
+      -
+        field: tiredness
+        operator: '<'
+        value: 10
+  -
+    name: nature
+    description: contemplate nature
+    effects:
+      -
+        field: happiness
+        value: +1
+      -
+        field: mana
+        value: -10
+      -
+        field: tiredness
+        value: +10
+  -
+    name: wine and series
+    description: drink wine and watch the series
+    effects:
+      -
+        field: health
+        value: -5
+      -
+        field: happiness
+        value: -1
+      -
+        field: mana
+        value: +30
+      -
+        field: money
+        value: -20
+      -
+        field: tiredness
+        value: +10
+  -
+    name: drink
+    description: go to pub
+    effects:
+      -
+        field: health
+        value: -10
+      -
+        field: mana
+        value: +60
+      -
+        field: happiness
+        value: +1
+      -
+        field: money
+        value: -100
+      -
+        field: tiredness
+        value: +40
+  -
+    name: drink up
+    description: drink with marginalized personalities
+    effects:
+      -
+        field: health
+        value: -80
+      -
+        field: happiness
+        value: +5
+      -
+        field: mana
+        value: +90
+      -
+        field: money
+        value: -150
+      -
+        field: tiredness
+        value: +80
+  -
+    name: sing
+    description: sing on the subway
+    effects:
+      -
+        field: happiness
+        value: +1
+      -
+        field: mana
+        value: +10
+      -
+        field: money
+        value: +10
+      -
+        field: tiredness
+        value: +20
+  -
+    name: sleep
+    description: sleep
+    effects:
+      -
+        field: mana
+        value: -50
+      -
+        field: tiredness
+        value: -70  
+    additional_cond:
+      -
+        condition:
+          -
+            field: mana
+            operator: '<'
+            value: 30
+        effects:
+          -
+            field: health
+            value: +90
+      -
+        condition:
+          -
+            field: mana
+            operator: '>'
+            value: 70
+        effects:
+          -
+            field: happiness
+            value: -3
