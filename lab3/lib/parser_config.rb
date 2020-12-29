@@ -17,7 +17,6 @@ class ParserConfig
   private
 
   def parse_config
-    config_not_found unless File.exist?(CONFIG_FILENAME)
     data = YAML.load_file(CONFIG_FILENAME)
     change_initial data['initial'] if data.include?('initial')
     create_actions data['actions'] if data.include?('actions')
@@ -66,7 +65,7 @@ class ParserConfig
   end
 
   def config_not_found
-    url = "https://github.com/Nasty8k/Ruby/tree/main/lab3/#{CONFIG_FILENAME}"
+    url = "https://github.com/Nasty8k/Ruby/tree/main/lab3/lib/#{CONFIG_FILENAME}"
     IOAdapter.instance.output "#{CONFIG_FILENAME} not found. Config download..."
     Kernel.open(url) do |config|
       File.open(CONFIG_FILENAME, 'w') { |f| f.write(config.read) }
