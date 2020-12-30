@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/action/cond'
+require_relative '../../lib/actions/cond'
 require_relative '../../lib/person'
 require 'rspec'
 

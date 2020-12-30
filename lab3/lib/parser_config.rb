@@ -3,7 +3,7 @@
 require 'yaml'
 require 'open-uri'
 require_relative 'action'
-Dir['./action/*.rb'].each { |file| require_relative file }
+Dir['./actions/*.rb'].each { |file| require_relative file }
 
 class ParserConfig
   CONFIG_FILENAME = 'config.yml'

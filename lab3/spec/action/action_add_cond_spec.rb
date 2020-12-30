@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/action/add_cond'
+require_relative '../../lib/actions/add_cond'
 require 'rspec'
 
 describe Action::AddCond do
