@@ -120,6 +120,21 @@ actions:
       -
         field: tiredness
         value: +20
+    additional_cond:
+      -
+        condition:
+          -
+            field: mana
+            operator: '>'
+            value: 40
+          -
+            field: mana
+            operator: '<'
+            value: 70
+        effects:
+          -
+            field: money
+            value: +50
   -
     name: sleep😴🛌
     description: sleep

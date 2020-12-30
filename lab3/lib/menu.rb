@@ -4,7 +4,7 @@ require_relative 'save_load'
 
 class Menu
   def initialize(person, actions_container)
-    @model = Model.new(person, actions_container)
+    @model = Game.new(person, actions_container)
     @person = person
   end
 

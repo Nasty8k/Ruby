@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Model
+class Game
   PARAMETERS = %w[health mana happiness tiredness money].freeze
 
   def initialize(person, actions_container)

@@ -39,4 +39,12 @@ describe Person do
     it { expect(subject).to eq(100) }
     it { expect(person.health).to eq(70) }
   end
+
+  describe '#mana not negative' do
+    subject { person.mana }
+    let(:mana) { -10 }
+
+    it { expect(subject).to eq(0) }
+  end
+
 end
